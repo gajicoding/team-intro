@@ -6,7 +6,15 @@ let data = [
         name: "김나경",
         age: 25,
         mbti: "INTP",
-        hobby: "수영, 퍼즐"
+        hobby: "수영 🏊, 퍼즐 🧩",
+        line: "아자아자자 !!!",
+        github: "gajicoding",
+        githubUrl: "https://github.com/gajicoding",
+
+        passion: "100%",
+        focus: "90%",
+        creativity: "70%",
+        confidence: "50%"
     },
 
     {
@@ -62,6 +70,21 @@ $(document).ready(function () {
         $('#info_age').text(data[i].age);
         $('#info_mbti').text(data[i].mbti);
         $('#info_hobby').text(data[i].hobby);
+        $('#info_line').text(data[i].line);
+        $('#info_github').text(data[i].github);
+        $('#info_github').attr("href", data[i].githubUrl);
+
+        $('.passion').text(data[i].passion);
+        $('.passion').css("--width", data[i].passion);
+
+        $('.focus').text(data[i].focus);
+        $('.focus').css("--width", data[i].focus);
+
+        $('.creativity').text(data[i].creativity);
+        $('.creativity').css("--width", data[i].creativity);
+
+        $('.confidence').text(data[i].confidence);
+        $('.confidence').css("--width", data[i].confidence);
     });
 
     // 기본값

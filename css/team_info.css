@@ -21,7 +21,7 @@
 .info-section h2 {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    
     color: #333;
     text-align: left;
 }
@@ -42,3 +42,62 @@
     color: #822e4b;
     font-weight: 500;
 }
+
+.info_col {
+    width: 100%;
+    display: flex;
+}
+
+.info_col  div {
+    width: 100%;
+}
+
+.textDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#info_github {
+    color: gray;
+}
+
+
+.meter {
+    width: 100%;
+    max-width: 280px;
+    background: #eee;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .fill {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    animation: fill 1s ease-out forwards;
+  }
+
+  @keyframes fill {
+    from { width: 0; }
+    to { width: var(--width); }
+  }
+
+  .passion { background: linear-gradient(to right, #ff5722, #ff8c00); --width: 100%; }
+  .focus   { background: linear-gradient(to right, #2196f3, #00bcd4); --width: 85%; }
+  .creativity { background: linear-gradient(to right, #9c27b0, #e91e63); --width: 70%; }
+  .confidence { background: linear-gradient(to right, #4caf50, #8bc34a); --width: 90%; }
