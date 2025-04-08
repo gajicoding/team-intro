@@ -2,7 +2,7 @@
 
 let data = [
     {
-        img: "https://www.notion.so/image/attachment%3Ab47d7103-83eb-458b-9835-2c42e035012d%3AIMG_8167.jpeg?table=block&id=1cf41f47-04b5-8070-91d9-da4af7de584c&spaceId=4324620a-83bb-47f4-99a0-bd151a86fd79&width=2000&userId=f0be0784-378b-464c-a05d-a77f412875c1&cache=v2",
+        img: "https://velog.velcdn.com/images/chen4023/post/f84b9ba8-d151-4594-9365-857af684d82f/image.png",
         name: "이다인",
         age: 23,
         mbti: "ISTP",
@@ -85,7 +85,7 @@ let data = [
         name: "김나경",
         age: 25,
         mbti: "INTP",
-        hobby: "수영 🏊, 퍼즐 🧩",
+        hobby: "수영 🏊 | 퍼즐 🧩 | 산책",
         line: "아자아자자 !!!",
         github: "gajicoding",
         githubUrl: "https://github.com/gajicoding",
