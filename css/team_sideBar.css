@@ -13,6 +13,7 @@
 .sideBar .teamDiv {
     flex-grow: 1;
     min-width: 100%;
+    background-color: #fff;
     box-shadow: 0px 4px 4px #00000025;
     border-radius: 16px;
 
@@ -32,7 +33,7 @@
 
 .teamActive {
     flex-grow: 3 !important;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
 }
 
 .teamDiv_img {
