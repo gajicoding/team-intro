@@ -54,9 +54,10 @@ body {
     border-radius: 0.5rem;
 }
 
-.d-flex {
+.savet {
     position: relative;
     margin-right: 30px;
+    top: 45%;
 }
 
 .guestInput {
@@ -71,8 +72,8 @@ body {
 
 .go_home {
     position: absolute;
-    top: 7px;
-    left: 10px;
+    top: 70px;
+    left: 53px;
 
     width: 100px;
     height: 100px;
