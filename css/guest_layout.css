@@ -1,3 +1,8 @@
+html {
+    height: 100%;
+    overflow-y: auto;
+}
+
 body {
     width: 100vw;
     min-height: 100vh;
@@ -6,14 +11,22 @@ body {
     justify-content: center;
 }
 
+.wrapper {
+    padding-top: 3px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .guestBox {
-    background-color: white;
     padding: 40px;
     border-radius: 20px;
     width: 100%;
     max-width: 1200px;
     min-height: 800px;
-
+    background-color: #ffffff90;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     justify-content: flex-start;
 }
 
@@ -24,21 +37,49 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: visible;
+
+}
+
+.message-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #saveBtn {
-    background-color: #803744;  
-    color: #ffffff;            
-    border: 1px solid #803744; 
-    border-radius: 0.5rem;      
+    background-color: #803744;
+    color: #ffffff;
+    border: 1px solid #803744;
+    border-radius: 0.5rem;
 }
 
 .d-flex {
     position: relative;
-    top: 5px;
+    top: -10px;
+    margin-right: 30px;
 }
 
 .form-control-sm {
-    border : none;
+    border: none;
     box-shadow: 0 0 3px;
+}
+
+.go_home {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.go_home span {
+    color: var(--primary-color);
+    transform: scale(2);
+}
+
+.guestBox h1 {
+    text-align: center;
+    width: 100%;
 }
