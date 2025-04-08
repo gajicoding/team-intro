@@ -14,7 +14,7 @@ let data = [
         passion: "100%",
         focus: "80%",
         creativity: "60%",
-        confidence: "50%"
+        confidence: "50%",
     },
 
     {
@@ -30,7 +30,7 @@ let data = [
         passion: "80%",
         focus: "65%",
         creativity: "75%",
-        confidence: "100%"
+        confidence: "100%",
     },
 
     {
@@ -46,7 +46,7 @@ let data = [
         passion: "80%",
         focus: "70%",
         creativity: "80%",
-        confidence: "60%"
+        confidence: "60%",
     },
 
     {
@@ -62,7 +62,7 @@ let data = [
         passion: "99%",
         focus: "99%",
         creativity: "60%",
-        confidence: "99%"
+        confidence: "99%",
     },
 
     {
@@ -78,7 +78,7 @@ let data = [
         passion: "80%",
         focus: "70%",
         creativity: "90%",
-        confidence: "50%"
+        confidence: "50%",
     },
 
     {
@@ -94,7 +94,7 @@ let data = [
         passion: "100%",
         focus: "100%",
         creativity: "80%",
-        confidence: "60%"
+        confidence: "60%",
     },
 ];
 

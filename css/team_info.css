@@ -18,13 +18,25 @@
     
 }
 
+.info-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .info-section h2 {
     font-size: 24px;
+    height: 40px;
     font-weight: bold;
     
     color: #333;
     text-align: left;
+    display: flex;
+    align-items: center;
 }
+
+
 
 
 .info-item {
@@ -47,12 +59,12 @@
 .info_col {
     width: 100%;
     display: grid;
-    grid-template-columns: 470px auto;
-    /* gap: 40px; */
+    grid-template-columns: 450px auto;
+    gap: 40px;
 }
 
 .info_col  div {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .textDiv {
@@ -97,15 +109,10 @@
     animation: fill 1s ease-out forwards;
   }
 
-  .reaction-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
 
-.reaction-buttons button {
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 0 10px;
+.reaction-buttons-inline button {
+    font-size: 14px;
+    padding: 5px 5px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -113,6 +120,7 @@
 }
 
 .like-btn {
+    
     background-color: #ffb347;
     color: white;
 }
