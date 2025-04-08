@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/team_layout.css">
     <link rel="stylesheet" href="./css/team_sideBar.css">
+    <link rel="stylesheet" href="./css/team_info.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/team_sideBar.js"></script>
@@ -17,12 +18,12 @@
 <body>
     <header>
         <!-- 헤더 -->
-         헤더
+        <h1 class="team-title">1E + 5I = 6T</h1>
     </header>
 
     <section>
 
-        <h2>title</h2>
+        <h2>팀원 소개</h2>
 
         <div class="content">
             <div id="sideBar" class="sideBar">
@@ -39,6 +40,14 @@
             <div class="intro">
                 <div class="intro_text">
                     <!-- 소개 정보 -->
+
+                    <div class="info-section">
+                        <h2>정보</h2>
+                        <div class="info-item"><span class="label">이름 : <spen id="info_name"></spen> </span> <span class="value">➔</span></div>
+                        <div class="info-item"><span class="label">나이 : <spen id="info_age"></spen> </span> <span class="value">➔</span></div>
+                        <div class="info-item"><span class="label">MBTI : <spen id="info_mbti"></spen> </span> <span class="value">➔</span></div>
+                        <div class="info-item"><span class="label">취미 : <spen id="info_hobby"></spen> </span> <span class="value">➔</span></div>
+                    </div>
                 </div>
     
                 <div class="imgSlider">
@@ -50,9 +59,5 @@
 
     </section>
 
-    
-    <footer>
-        <!-- 푸터 -->
-    </footer>
 </body>
 </html>
