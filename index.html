@@ -44,14 +44,23 @@
         cursor: pointer;
       }
     </style>
+
+    <script>
+      function gotopage() {
+        window.location.href = "team.html";
+      }
+      function gotoguest() {
+        window.location.href = "guest.html";
+      }
+    </script>
   </head>
   <body style="background-color: pink">
     <div class="container">
       <img src="C:\Users\SAMSUNG\Desktop\logo.png" class="image" />
       <p class="text">감수성이 풍부하고 공감을 매우 잘하는 6명이 뭉친 조♡</p>
       <div class="button-container">
-        <button class="round-button">T</button>
-        <button class="round-button">F</button>
+        <button onclick="gotopage()" class="round-button">T</button>
+        <button onclick="gotoguest()" class="round-button">F</button>
       </div>
     </div>
   </body>
