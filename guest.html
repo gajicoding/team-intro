@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./css/guest_layout.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 
   <title>E1 + I5 = 6T</title>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -73,19 +74,20 @@
         })()
         : "";
 
-      let temp_html = `
+        let temp_html = `
 <div class="guest-card d-flex justify-content-between align-items-center px-3 mb-3 rounded-4" style="background-color: #fff5f5;">
   <div class="d-flex align-items-center gap-3">
-    <div class="avatar text-secondary" style="font-size: 3rem;">
+    <div class="avatar text-secondary" d-flex align-items-center style="font-size: 3rem;">
       <i class="bi bi-person-circle"></i>
     </div>
-    <div>
+    <div class="d-flex flex-column justify-content-center" style="line-height: 1.2;">
       <div class="fw-bold" style="font-size: 1rem;">${name}</div>
       <div class="text-muted" style="font-size: 0.9rem;">${message}</div>
     </div>
   </div>
-  <div class="text-muted" style="font-size: 0.8rem;">${timeStr}</div>
+  <div class="text-muted text-end" style="font-size: 0.8rem;">${timeStr}</div>
 </div>`;
+
 
       $('.append').append(temp_html);
     });
@@ -93,14 +95,17 @@
 </head>
 
 <body>
+  <div class="wrapper">
   <div class="guestBox shadow">
-    <div class="message d-flex align-items-start gap-4">
+    <div class="message d-flex align-items-start gap-4" style="border: none" ;>
       <h1 style="color: #803744;">guestBox</h1>
-      <a href="index.html">
-        <button type="button" class="btn btn-warning btn-sm" style="flex: 0 0 auto; align-self: flex-end;">
-          뒤로가기
-        </button>
+
+      <a href="./index.html" class="go_home">
+        <span class="material-symbols-outlined">
+          home
+        </span>
       </a>
+
       <div class="d-flex gap-3">
         <div class="form-floating">
           <input type="text" class="form-control-sm" id="name" placeholder="이름">
@@ -119,6 +124,7 @@
       <!-- 방명록 목록출력됨 -->
     </div>
   </div>
+</div>
 </body>
 
 </html>
