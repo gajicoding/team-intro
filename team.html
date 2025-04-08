@@ -10,51 +10,11 @@
 
     <link rel="stylesheet" href="./css/root.css">
     <link rel="stylesheet" href="./css/team_layout.css">
-    <style>
-        .team-title {
-            text-align: center;
-            font-size: 35px;
-            font-weight: bold;
-            color: #822e4b;
-            padding: 20px 0;
-        }
+    <link rel="stylesheet" href="./css/team_sideBar.css">
+    <link rel="stylesheet" href="./css/team_info.css">
 
-        .info-section {
-            padding: 30px;
-            font-family: 'Noto Sans KR', sans-serif;
-            background-color: #fff;
-            border-radius: 16px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            margin-left: 40px;
-            
-        }
-
-        .info-section h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #333;
-            text-align: left;
-        }
-
-        .info-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 12px;
-            font-size: 18px;
-        }
-
-        .label {
-            font-weight: bold;
-            color: #444;
-        }
-
-        .value {
-            color: #822e4b;
-            font-weight: 500;
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/team_sideBar.js"></script>
 </head>
 
 <body>
@@ -64,37 +24,78 @@
     </header>
 
     <section>
-        <div class="sideBar">
-            <!-- 사이드바 -->ㅇㅇ
-        </div>
 
-        <div class="intro">
-            <div class="intro_text">
-                <!-- 소개 정보 -->
-                <div class="info-section">
-                    <h2>정보</h2>
-                    <div class="info-item"><span class="label">이름 :</span> <span class="value">➔</span></div>
-                    <div class="info-item"><span class="label">나이 :</span> <span class="value">➔</span></div>
-                    <div class="info-item"><span class="label">MBTI :</span> <span class="value">➔</span></div>
-                    <div class="info-item"><span class="label">취미 :</span> <span class="value">➔</span>
+        <h2 class="title">팀원 소개</h2>
+
+        <div class="content">
+            <div id="sideBar" class="sideBar">
+                <!-- 사이드바 -->
+
+                <!-- <div class="teamDiv">
+                    <div class="img" style="background-image: url('${d.img}');"></div>
+                    <div>
+                        ${d.name}
                     </div>
-                </div>
-
-
-
+                </div> -->
             </div>
+    
+            <div class="intro">
+                <div class="intro_text">
+                    <!-- 소개 정보 -->
 
-            <div class="imgSlider">
-                <!-- 이미지 슬라이더 -->
+                    <div class="info-section">
+                        <div class="info_col">
+                            <div class="textDiv">
+                                <h2>⭐ <span id="info_name"></span></h2>
+                                <!-- <div class="info-item"><span class="label">이름 : <spen id="info_name"></spen> </span> </div> -->
+                                
+                                <div>
+                                    <div class="info-item"><span class="label">나이 : <spen id="info_age"></spen> </span> </div>
+                                    <div class="info-item"><span class="label">MBTI : <spen id="info_mbti"></spen> </span> </div>
+                                    <div class="info-item"><span class="label">취미 : <spen id="info_hobby"></spen> </span> </div>
+                                    <div class="info-item"><span class="label">한줄 소개 : <spen id="info_line"></spen> </span> </div>
+                                    <div class="info-item"><span class="label">GitHub : <a id="info_github" target="_blank"></a> </span> </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <div class="barDiv">
+                                <div class="label">🔥 열정</div>
+                                <div class="meter">
+                                    <div class="fill passion" style="--width: 10%"></div>
+                                </div>
+    
+                                <div class="label">🧠 집중력</div>
+                                <div class="meter">
+                                    <div class="fill focus"></div>
+                                </div>
+    
+                                <div class="label">🎨 창의성</div>
+                                <div class="meter">
+                                    <div class="fill creativity"></div>
+                                </div>
+    
+                                <div class="label">💪 자신감</div>
+                                <div class="meter">
+                                    <div class="fill confidence"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+    
+                <div class="imgSlider">
+                    <!-- 이미지 슬라이더 -->
+                </div>
             </div>
         </div>
+        
 
     </section>
 
-
-    <footer>
-        <!-- 푸터 -->
-    </footer>
 </body>
 
 </html>
