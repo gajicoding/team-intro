@@ -40,7 +40,7 @@
       let message = $('#message').val();
 
       if (!name || !message) {
-        alert('이름과 메시지를 입력해주세요');
+        alert('이름과 메시지를 입력해주세요.');
         return;
       }
 
@@ -51,7 +51,7 @@
       };
 
       await addDoc(collection(db, "guestBox"), docData);
-      alert('E1 + I5 = 6T 의 게시판에 오신것을 환영합니다.');
+      alert('E1 + I5 = 6T 의 게시판에 오신 것을 환영합니다.');
       window.location.reload();
     });
 
