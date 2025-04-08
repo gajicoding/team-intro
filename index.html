@@ -1,15 +1,68 @@
 <!-- 메인, 홈 페이지 -->
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E1 + I5 = 6T</title>
+  <head>
+    <link rel="stylesheet" href="./css/root.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개서</title>
 
-    <link rel="stylesheet" href="./css/root.css">
-</head>
-<body>
-    
-</body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Gaegu&family=Gowun+Batang&family=Gowun+Dodum&family=Jua&family=Nanum+Myeongjo&display=swap");
+
+      .container {
+        background-color: white;
+        width: 1700px;
+        height: 1000px;
+        margin: 70px auto 0px auto;
+
+        text-align: center;
+      }
+
+      .image {
+        width: 400px;
+        height: auto;
+        padding: 80px 0px 0px 10px;
+      }
+      .text {
+        font-size: 50px;
+        font-family: "Jua", sans-serif;
+        margin: 50px 10px 0px 0px;
+      }
+      .button-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 300px 70px 0px 70px;
+      }
+      .round-button {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: gray;
+        color: white;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+
+    <script>
+      function gotopage() {
+        window.location.href = "team.html";
+      }
+      function gotoguest() {
+        window.location.href = "guest.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./img/logo.png" class="image" />
+      <p class="text">감수성이 풍부하고 공감을 매우 잘하는 6명이 뭉친 조♡</p>
+      <div class="button-container">
+        <button onclick="gotopage()" class="round-button">T</button>
+        <button onclick="gotoguest()" class="round-button">F</button>
+      </div>
+    </div>
+  </body>
 </html>

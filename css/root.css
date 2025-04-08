@@ -1,91 +1,131 @@
 @charset "utf-8";
 
 :root {
-    --bg-color: #FFFFFF;
-    --text-color: #212121;
-    --primary-color: #FFDEE4;
+  --bg-color: #ffffff;
+  --text-color: #212121;
+  --primary-color: #ffdee4;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
 
-    font-family: "Noto Sans", "", sans-serif;
-    transition: background-color 0.3s, color 0.3s;
+  font-family: "Noto Sans", "", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: var(--heading-color);
-    font-weight: bold;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-weight: bold;
 }
 
-h1 { font-size: 2rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1.1rem; }
-h6 { font-size: 1rem; }
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.1rem;
+}
+h6 {
+  font-size: 1rem;
+}
 
 p {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
-html,body,#root {
-    width: 100%;
-    font-family: "Noto Sans KR", "Noto Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 100%;
+html,
+body,
+#root {
+  width: 100%;
+  font-family: "Noto Sans KR", "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
 }
 
-header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption {
-    display: block;
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+details,
+menu,
+figure,
+figcaption {
+  display: block;
 }
 
-button,input[type=submit],input[type=reset],input[type=button] {
-    overflow: visible;
-    cursor: pointer;
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  overflow: visible;
+  cursor: pointer;
 }
 
-input[type=text],input[type=email],input[type=password],input[type=submit],textarea {
-    -webkit-appearance: none;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
 }
 
-input,select,textarea,button {
-    font-family: Pretendard-Regular, sans-serif;
-    font-size: 100%;
-    border-radius: 0;
+input,
+select,
+textarea,
+button {
+  font-family: Pretendard-Regular, sans-serif;
+  font-size: 100%;
+  border-radius: 0;
 }
 
 button {
-    overflow: visible;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 ul li {
-    list-style: none;
+  list-style: none;
 }
 
-img,fieldset {
-    border: none;
-    vertical-align: top;
+img,
+fieldset {
+  border: none;
+  vertical-align: top;
 }
 
 hr {
-    display: none;
+  display: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--text-color);
+  text-decoration: none;
+  color: var(--text-color);
 }
