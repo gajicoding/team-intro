@@ -15,9 +15,11 @@ header {
 }
 
 section {
+    position: relative;
     min-width: 500px;
     width: 1200px;
     height: calc(100vh - 150px);
+    max-height: 780px;
     border-radius: 20px;
 
     background-color: #ffffff;
@@ -44,3 +46,17 @@ section h2 {
     width: 100%;
 }
 
+
+.go_home {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+
+    width: 100px;
+    height: 100px;
+}
+
+.go_home span {
+    color: var(--primary-color);
+    transform: scale(2);
+}

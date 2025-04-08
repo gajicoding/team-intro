@@ -12,27 +12,29 @@
 
       .container {
         background-color: white;
-        width: 1700px;
-        height: 1000px;
+        width: 1200px;
+        height: calc(100vh - 150px);
+        max-height: 780px;
         margin: 70px auto 0px auto;
+        border-radius: 20px;
 
         text-align: center;
       }
 
       .image {
-        width: 400px;
+        width: 300px;
         height: auto;
         padding: 80px 0px 0px 10px;
       }
       .text {
-        font-size: 50px;
+        font-size: 40px;
         font-family: "Jua", sans-serif;
         margin: 50px 10px 0px 0px;
       }
       .button-container {
         display: flex;
         justify-content: space-between;
-        margin: 300px 70px 0px 70px;
+        margin: 130px 70px 0px 70px;
       }
       .round-button {
         width: 100px;
@@ -58,6 +60,7 @@
   <body>
     <div class="container">
       <img src="./img/logo.png" class="image" />
+
       <p class="text">감수성이 풍부하고 공감을 매우 잘하는 6명이 뭉친 조♡</p>
       <div class="button-container">
         <button onclick="gotopage()" class="round-button">T</button>
