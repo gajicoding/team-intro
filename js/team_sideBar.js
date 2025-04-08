@@ -10,9 +10,10 @@ let data = [
         line: "좋은 동료가 됩시다",
         github: "dain391",
         githubUrl: "https://github.com/dain391",
-        passion: "80%",
-        focus: "70%",
-        creativity: "90%",
+
+        passion: "100%",
+        focus: "80%",
+        creativity: "60%",
         confidence: "50%"
     },
 
