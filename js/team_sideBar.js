@@ -14,7 +14,7 @@ let data = [
         passion: "100%",
         focus: "80%",
         creativity: "60%",
-        confidence: "50%",
+        confidence: "60%",
     },
 
     {
