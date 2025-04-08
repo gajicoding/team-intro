@@ -128,18 +128,30 @@ $(document).ready(function () {
         $('#info_line').text(data[i].line);
         $('#info_github').text(data[i].github);
         $('#info_github').attr("href", data[i].githubUrl);
-
+        
         $('.passion').text(data[i].passion);
         $('.passion').css("--width", data[i].passion);
+        $('.passion').removeClass("fill-animation");
+        void $('.passion')[0].offsetWidth;
+        $('.passion').addClass("fill-animation");
 
         $('.focus').text(data[i].focus);
         $('.focus').css("--width", data[i].focus);
+        $('.focus').removeClass("fill-animation");
+        void $('.focus')[0].offsetWidth;
+        $('.focus').addClass("fill-animation");
 
         $('.creativity').text(data[i].creativity);
         $('.creativity').css("--width", data[i].creativity);
+        $('.creativity').removeClass("fill-animation");
+        void $('.creativity')[0].offsetWidth;
+        $('.creativity').addClass("fill-animation");
 
         $('.confidence').text(data[i].confidence);
         $('.confidence').css("--width", data[i].confidence);
+        $('.confidence').removeClass("fill-animation");
+        void $('.confidence')[0].offsetWidth;
+        $('.confidence').addClass("fill-animation");
     });
 
     // 기본값
