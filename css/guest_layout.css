@@ -10,7 +10,6 @@ body {
     background-color: white;
     padding: 40px;
     border-radius: 20px;
-
     width: 100%;
     max-width: 1100px;
     min-height: 800px;
@@ -19,8 +18,27 @@ body {
 }
 
 .message {
-    width: 500px;
-
+    width: 100%;
     border: 1px solid white;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#saveBtn {
+    background-color: #803744;  
+    color: #ffffff;            
+    border: 1px solid #803744; 
+    border-radius: 0.5rem;      
+}
+
+.d-flex {
+    position: relative;
+    top: 5px;
+}
+
+.form-control-sm {
+    border : none;
+    box-shadow: 0 0 3px;
 }
