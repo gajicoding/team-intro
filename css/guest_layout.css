@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guestBox {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+
+    width: 100%;
+    max-width: 1100px;
+    min-height: 800px;
+
+    justify-content: flex-start;
+}
+
+.message {
+    width: 500px;
+
+    border: 1px solid white;
+    padding: 20px;
+}

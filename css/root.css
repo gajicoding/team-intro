@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--primary-color);
     color: var(--text-color);
 
     font-family: "Noto Sans", "", sans-serif;

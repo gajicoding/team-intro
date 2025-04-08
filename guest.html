@@ -3,13 +3,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E1 + I5 = 6T</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/root.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./css/root.css" />
+  <link rel="stylesheet" href="./css/guest_layout.css" />
+
+  <title>E1 + I5 = 6T</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDRA5ozKwFy6EicdoQAQJBDT2vpO2KL9SA",
+      authDomain: "sparta-dfa33.firebaseapp.com",
+      projectId: "sparta-dfa33",
+      storageBucket: "sparta-dfa33.appspot.com",
+      messagingSenderId: "926072373954",
+      appId: "1:926072373954:web:c4395201e9e2f996f5315b",
+      measurementId: "G-EMEQ041V8M"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    $("#saveBtn").click(async function () {
+      let name = $('#name').val();
+      let message = $('#message').val();
+
+      if (!name || !message) {
+        alert('이름과 메시지를 입력해주세요');
+        return;
+      }
+
+      let docData = {
+        name: name,
+        message: message,
+        timestamp: new Date()
+      };
+
+      await addDoc(collection(db, "guestBox"), docData);
+      alert('E1 + I5 = 6T 의 게시판에 오신것을 환영합니다.');
+      window.location.reload();
+    });
+
+    const q = query(collection(db, "guestBox"), orderBy("timestamp", "desc"));
+    let docsSnapshot = await getDocs(q);
+    docsSnapshot.forEach((doc) => {
+      let row = doc.data();
+      let name = row['name'];
+      let message = row['message'];
+      let timeStr = row.timestamp ? row.timestamp.toDate().toLocaleString('ko-KR') : "";
+
+      let temp_html = `<div class="card border-light mb-3" style="max-width: 1000px">
+  <div class="card-header d-flex justify-content-between align-items-center">
+    <span>${name}</span>
+    <span class="text-muted" style="font-size: 0.8rem;">${timeStr}</span>
+  </div>
+  <div class="card-body">
+    <p class="card-text">${message}</p>
+  </div>
+</div>`;
+      $('.append').append(temp_html);
+    });
+  </script>
 </head>
+
 <body>
-    
+  <div class="guestBox shadow">
+    <div class="message d-flex align-items-start gap-4">
+      <h1>guestBox</h1>
+      <div class="d-flex gap-3">
+        <div class="form-floating" style="flex: 0 0 150px;">
+          <input type="text" class="form-control" id="name" placeholder="이름">
+          <label for="name">이름</label>
+        </div>
+        <div class="form-floating flex-grow-1" style="flex: 0 0 500px;">
+          <input type="text" class="form-control" id="message" placeholder="메시지">
+          <label for="message">메시지</label>
+        </div>
+        <button id="saveBtn" type="button" class="btn btn-warning" style="flex: 0 0 auto; align-self: flex-end;">
+          기록하기
+        </button>
+      </div>
+    </div>
+    <div class="append mt-5 px-3">
+      <!-- 방명록 목록출력됨 -->
+    </div>
+  </div>
 </body>
 </html>
