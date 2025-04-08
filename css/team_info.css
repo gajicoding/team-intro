@@ -26,6 +26,7 @@
     text-align: left;
 }
 
+
 .info-item {
     display: flex;
     justify-content: space-between;
@@ -45,7 +46,9 @@
 
 .info_col {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 470px auto;
+    /* gap: 40px; */
 }
 
 .info_col  div {
@@ -65,7 +68,7 @@
 
 .meter {
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
     background: #eee;
     border-radius: 25px;
     overflow: hidden;
@@ -89,6 +92,8 @@
     justify-content: center;
     color: white;
     font-weight: bold;
+    transition: width 1s;
+    
     animation: fill 1s ease-out forwards;
   }
 

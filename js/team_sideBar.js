@@ -2,7 +2,86 @@
 
 let data = [
     {
-        img: "https://sitem.ssgcdn.com/87/70/47/item/1000026477087_i1_750.jpg",
+        img: "https://www.notion.so/image/attachment%3Ab47d7103-83eb-458b-9835-2c42e035012d%3AIMG_8167.jpeg?table=block&id=1cf41f47-04b5-8070-91d9-da4af7de584c&spaceId=4324620a-83bb-47f4-99a0-bd151a86fd79&width=2000&userId=f0be0784-378b-464c-a05d-a77f412875c1&cache=v2",
+        name: "이다인",
+        age: 23,
+        mbti: "ISTP",
+        hobby: "🎮 게임 | 📒일기 쓰기 | 📺 애니메이션 보기",
+        line: "좋은 동료가 됩시다",
+        github: "dain391",
+        githubUrl: "https://github.com/dain391",
+        passion: "80%",
+        focus: "70%",
+        creativity: "90%",
+        confidence: "50%"
+    },
+
+    {
+        img: "https://www.chosun.com/resizer/v2/7ZPKMNWZZFFODIJ26ETNXN2FDA.jpg?auth=da537d01988a31c1969682f56a067bc2b110cbc8620556603c528495a71ffbc5&width=960&height=1025&smart=true",
+        name: "김현수",
+        age: 26,
+        mbti: "ENTP",
+        hobby: "카페☕  |   시 읽기📗  |  식물 키우기☘ ",
+        line: "항상 겸손하겠습니다!",
+        github: "kinhyunsu",
+        githubUrl: "https://github.com/kinhyunsu",
+
+        passion: "80%",
+        focus: "65%",
+        creativity: "75%",
+        confidence: "100%"
+    },
+
+    {
+        img:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg",
+        name: "박민욱",
+        age: 29,
+        mbti: "INTJ",
+        hobby: "기타, jpop, 패션",
+        line: "열심히 해봅시다~",
+        github: "m1lotic",
+        githubUrl: "https://github.com/m1lotic",
+
+        passion: "80%",
+        focus: "70%",
+        creativity: "80%",
+        confidence: "60%"
+    },
+
+    {
+        img:"https://theyouthdream.com/files/attach/images/2021/11/22/830237e85e184f4f8ccb25083416b34f.jpg",
+        name: "박현정",
+        age: 28,
+        mbti: "ISTP",
+        hobby: "일기쓰기 📝,애니메이션",
+        line: "화이팅!!!",
+        github: "parkjj0408",
+        githubUrl: "https://github.com/parkjj0408",
+
+        passion: "99%",
+        focus: "99%",
+        creativity: "60%",
+        confidence: "99%"
+    },
+
+    {
+        img: "https://image.chosun.com/sitedata/image/201812/04/2018120400079_0.jpg",
+        name: "최태웅",
+        age: 25,
+        mbti: "INTP",
+        hobby: "🎮 게임 | 💸 투자 | 🍽️ 맛집탐방",
+        line: "파이팅팅팅팅팅팅~~!~",
+        github: "taeung515",
+        githubUrl: "https://github.com/taeung515",
+
+        passion: "80%",
+        focus: "70%",
+        creativity: "90%",
+        confidence: "50%"
+    },
+
+    {
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0h8zetbtWGuiH3LwJW6oFszupZu1EAdxPoxLc43dfi0TUzKdWde7U4LKdSOocTPwt4D0&usqp=CAU",
         name: "김나경",
         age: 25,
         mbti: "INTP",
@@ -12,34 +91,9 @@ let data = [
         githubUrl: "https://github.com/gajicoding",
 
         passion: "100%",
-        focus: "90%",
-        creativity: "70%",
-        confidence: "50%"
-    },
-
-    {
-        img: "https://blog.kakaocdn.net/dn/tEMUl/btrDc6957nj/NwJoDw0EOapJNDSNRNZK8K/img.jpg",
-        name: "홍길동"
-    },
-
-    {
-        img: "https://blog.kakaocdn.net/dn/tEMUl/btrDc6957nj/NwJoDw0EOapJNDSNRNZK8K/img.jpg",
-        name: "김길동"
-    },
-
-    {
-        img: "https://blog.kakaocdn.net/dn/tEMUl/btrDc6957nj/NwJoDw0EOapJNDSNRNZK8K/img.jpg",
-        name: "이길동"
-    },
-
-    {
-        img: "https://blog.kakaocdn.net/dn/tEMUl/btrDc6957nj/NwJoDw0EOapJNDSNRNZK8K/img.jpg",
-        name: "나길동"
-    },
-
-    {
-        img: "https://blog.kakaocdn.net/dn/tEMUl/btrDc6957nj/NwJoDw0EOapJNDSNRNZK8K/img.jpg",
-        name: "가길동"
+        focus: "100%",
+        creativity: "80%",
+        confidence: "60%"
     },
 ];
 
