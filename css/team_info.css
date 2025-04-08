@@ -97,6 +97,42 @@
     animation: fill 1s ease-out forwards;
   }
 
+  .reaction-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.reaction-buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.like-btn {
+    background-color: #ffb347;
+    color: white;
+}
+
+.like-btn:hover {
+    background-color: #ffa500;
+}
+
+.dislike-btn {
+    background-color: #b0b0b0;
+    color: white;
+}
+
+.dislike-btn:hover {
+    background-color: #8e8e8e;
+}
+
+
+
+
   @keyframes fill {
     from { width: 0; }
     to { width: var(--width); }
