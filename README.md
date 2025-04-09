@@ -16,3 +16,7 @@
 - CSS
 - Firebase
 - GitHub
+
+---
+### 시연 영상
+https://youtu.be/v1RDTepEESI?si=JPVxlsDrGHa3I7vg
