@@ -35,6 +35,10 @@ let data = [
         focus: "65%",
         creativity: "75%",
         confidence: "100%",
+
+        img1:"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbdALwM%2FbtsNcvsR71E%2Fi0a0l8bwNJXV3LLevaCjo1%2Fimg.jpg",
+        img2:"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcwpIyB%2FbtsNeoyUG73%2FIHtYojpmeGqv2yRZkwu8cK%2Fimg.jpg",
+        img3:"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F2UtA7%2FbtsNd7cXzAR%2FjknmkElSYBgHrkOPkYXdnk%2Fimg.jpg"
     },
 
     {
@@ -52,9 +56,9 @@ let data = [
         creativity: "80%",
         confidence: "60%",
 
-        img1:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg",
-        img2:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg",
-        img3:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg"
+        img1:"https://teamsparta.notion.site/image/attachment%3Ab9917590-9dcf-4bd8-9f94-98f567f357dd%3AKakaoTalk_20250317_145639825.jpg?table=block&id=1b92dc3e-f514-8075-b2f3-d0f6db491f9b&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2",
+        img2:"https://teamsparta.notion.site/image/attachment%3A1eeb13b3-b352-438e-bcf8-d0e763a36e88%3AKakaoTalk_20250317_145943077.jpg?table=block&id=1b92dc3e-f514-803b-81b1-cccaddad5f00&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2",
+        img3:"https://teamsparta.notion.site/image/attachment%3A1d2022e1-7eda-4f0d-bc3c-b3bf74225c9d%3AKakaoTalk_20250317_145445412.jpg?table=block&id=1b92dc3e-f514-8023-af18-ea27735d09ad&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=1420&userId=&cache=v2"
     },
 
     {
@@ -72,7 +76,9 @@ let data = [
         creativity: "60%",
         confidence: "99%",
 
-        img1:"C:\Users\SAMSUNG\Desktop\image_20250409_105815579.jpg", img2:"C:\Users\SAMSUNG\Desktop\image_20250409_105733626.jpg", img3:"C:\Users\SAMSUNG\Desktop\image_20250409_105815579.jpg"
+        img1:"C:\Users\SAMSUNG\Desktop\image_20250409_105815579.jpg", 
+        img2:"C:\Users\SAMSUNG\Desktop\image_20250409_105733626.jpg", 
+        img3:"C:\Users\SAMSUNG\Desktop\image_20250409_105815579.jpg"
     },
 
     {
@@ -109,6 +115,10 @@ let data = [
         focus: "100%",
         creativity: "80%",
         confidence: "60%",
+
+        img1:"https://lh3.googleusercontent.com/pw/AP1GczNUoEfB0UsXXGrUW_AYfPduonfHeVlkm71lX-hPrlUEci58ZUX7jduiCgxCD47lkH79Ic1a07SL39N0dJNL31n5XbUJf40VlyL53xlb9Av06kGnhuYT9KHgvjRKTetD7wsNLEz25Lg_F1a5IowNLlM=w800-h449-s-no-gm",
+        img2:"https://lh3.googleusercontent.com/pw/AP1GczOUt0AXyT_bFU2lADrMzernfvvBtUDd3pCIXtrxyh1VIjvrUJU1CxZI30VH9R7kJLYSJLYONlDz_2br70ycFIehmW-KJX-Pg7DgSDnKxsNmDffO8Bj0XlODi80JwwyOfrVhujuznzBZ1eI3a5VJzAA=w1280-h720-s-no-gm",
+        img3:"https://lh3.googleusercontent.com/pw/AP1GczNTRZbh__hplW35m5kSLvAw-ZBtY39netJyREVDgreXueFIH5ARTrSbDX75-h4K57c0S01Ol6hUhAazoM7jU-QC2uUVDlK03mRgoDT0AenEK-GSniS83G7KyycPszoGuzAXp6XV5fN2Xx9pRYpXcjY=w1080-h607-s-no-gm?authuser=0"
     },
 ];
 
