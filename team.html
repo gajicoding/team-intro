@@ -209,9 +209,9 @@ appendBtn.addEventListener("click", () => {
                 <!-- 이미지 슬라이더 -->
                 <div class="info-section" style="margin-top: 15px;">
 
-                        <div id="flick" class="flicking-viewport">
+                        <!-- <div id="flick" class="flicking-viewport">
                             <div class="flicking-camera">
-                              <div class="flicking-panel"><img id="flick-img1" style="width: 100%; height: 100%;   object-fit: cover;
+                              <div class="flicking-panel"><div id="flick-img1"></div><img style="width: 100%; height: 100%;   object-fit: cover;
                                 object-position: center;
                                 display: block;"></div>
                               <div class="flicking-panel"><img id="flick-img2" style="width: 100%; height: 100%;   object-fit: cover;
@@ -221,7 +221,15 @@ appendBtn.addEventListener("click", () => {
                                 object-position: center;
                                 display: block;"></div>
                             </div>
-                          </div>
+                        </div> -->
+
+                        <div id="flick" class="flicking-viewport">
+                            <div class="flicking-camera">
+                              <div class="flicking-panel" id="flick-img1" ></div>
+                              <div class="flicking-panel" id="flick-img2" ></div>
+                              <div class="flicking-panel" id="flick-img3"></div>
+                            </div>
+                        </div>
 
                 </div>
 

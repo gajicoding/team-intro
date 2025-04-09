@@ -167,13 +167,13 @@ $(document).ready(function () {
         void $('.confidence')[0].offsetWidth;
         $('.confidence').addClass("fill-animation");
 
-       /* $('#flick-img1').css({'background-image': `url('${data[i].img1}')`,'background-size': 'contain','background-repeat': 'no-repeat'})
-        $('#flick-img2').css({'background-image': `url('${data[i].img2}')`,'background-size': 'contain','background-repeat': 'no-repeat'})
-        $('#flick-img3').css({'background-image': `url('${data[i].img3}')`,'background-size': 'contain','background-repeat': 'no-repeat'})*/
+        $('#flick-img1').css({'background-image': `url('${data[i].img1}')`,'background-size': '384px 200px', 'background-repeat': 'no-repeat'})
+        $('#flick-img2').css({'background-image': `url('${data[i].img2}')`,'background-size': '384px 200px','background-repeat': 'no-repeat'})
+        $('#flick-img3').css({'background-image': `url('${data[i].img3}')`,'background-size': '384px 200px','background-repeat': 'no-repeat'})
 
-        $('#flick-img1').attr('src', data[i].img1);
-        $('#flick-img2').attr('src', data[i].img2);
-        $('#flick-img3').attr('src', data[i].img3);
+        // $('#flick-img1').attr('src', data[i].img1);
+        // $('#flick-img2').attr('src', data[i].img2);
+        // $('#flick-img3').attr('src', data[i].img3);
 
     });
 
