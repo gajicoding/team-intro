@@ -15,6 +15,10 @@ let data = [
         focus: "80%",
         creativity: "60%",
         confidence: "60%",
+
+        img1:"https://ifh.cc/g/ykbo83.jpg",
+        img2:"https://ifh.cc/g/MhPJJA.jpg",
+        img3:"https://ifh.cc/g/2wRCbk.jpg"
     },
 
     {
@@ -47,6 +51,10 @@ let data = [
         focus: "70%",
         creativity: "80%",
         confidence: "60%",
+
+        img1:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg",
+        img2:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg",
+        img3:"https://i.pinimg.com/736x/b4/a1/18/b4a1180668588e702b169d5c87b0e8a7.jpg"
     },
 
     {
@@ -63,6 +71,8 @@ let data = [
         focus: "99%",
         creativity: "60%",
         confidence: "99%",
+
+        img1:"C:\Users\SAMSUNG\Desktop\image_20250409_105815579.jpg", img2:"C:\Users\SAMSUNG\Desktop\image_20250409_105733626.jpg", img3:"C:\Users\SAMSUNG\Desktop\image_20250409_105815579.jpg"
     },
 
     {
@@ -79,6 +89,10 @@ let data = [
         focus: "70%",
         creativity: "90%",
         confidence: "50%",
+
+        img1:"https://cgeimage.commutil.kr/phpwas/restmb_allidxmake.php?pp=002&idx=3&simg=20200624120640010583cf949c6b9123811052.jpg&nmt=27",
+        img2:"https://img4.daumcdn.net/thumb/R658x0.q70/?fname=https://t1.daumcdn.net/news/202504/08/kedbiz/20250408132504071cgfm.jpg",
+        img3:"https://ugc-images.catchtable.co.kr/rv/sbNYNcEUby1Zryfu6X5hsnQ/627b47b230d948ad953fa900c6f5993e"
     },
 
     {
@@ -152,6 +166,15 @@ $(document).ready(function () {
         $('.confidence').removeClass("fill-animation");
         void $('.confidence')[0].offsetWidth;
         $('.confidence').addClass("fill-animation");
+
+       /* $('#flick-img1').css({'background-image': `url('${data[i].img1}')`,'background-size': 'contain','background-repeat': 'no-repeat'})
+        $('#flick-img2').css({'background-image': `url('${data[i].img2}')`,'background-size': 'contain','background-repeat': 'no-repeat'})
+        $('#flick-img3').css({'background-image': `url('${data[i].img3}')`,'background-size': 'contain','background-repeat': 'no-repeat'})*/
+
+        $('#flick-img1').attr('src', data[i].img1);
+        $('#flick-img2').attr('src', data[i].img2);
+        $('#flick-img3').attr('src', data[i].img3);
+
     });
 
     // 기본값

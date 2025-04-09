@@ -12,12 +12,30 @@
     <link rel="stylesheet" href="./css/team_layout.css">
     <link rel="stylesheet" href="./css/team_sideBar.css">
     <link rel="stylesheet" href="./css/team_info.css">
+    <link rel="stylesheet" href="node_modules/sakura-js/dist/sakura.min.css">  
+
+
+    <!--flick css,js-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.11.2/flicking.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.11.2/flicking-inline.css" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://naver.github.io/egjs-flicking-plugins/release/latest/dist/flicking-plugins.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/egjs-flicking/4.4.0/flicking.pkgd.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="node_modules/@egjs/flicking/dist/flicking.css">  
+    <link rel="stylesheet" href="node_modules/@egjs/flicking/dist/flicking.min.css">  
+    <link rel="stylesheet" href="node_modules/@egjs/flicking/dist/flicking.min.min.css">  
+    <script src="node_modules/@egjs/flicking/dist/flicking.min.js"></script>
+    <script src="node_modules/@egjs/flicking/dist/flicking.js"></script>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/team_sideBar.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+
+
+
 
 
 </head>
@@ -36,6 +54,73 @@
             $("#dislike-count").text(dislikeCount);
         });
     });
+
+// 플릭 애니메이션
+document.addEventListener("DOMContentLoaded", function () {
+const flicking = new Flicking("#flick", {
+  //renderOnlyVisible: true,
+  circular: true,
+  moveType: ["strict", { count: 1 }]
+}).on({
+   moveEnd : function(e){
+     console.log('aaa')
+   }
+});
+
+document.querySelector(".flicking-arrow-prev").addEventListener("click", function () {
+  flicking.prev(500);
+});
+document.querySelector(".flicking-arrow-next").addEventListener("click", function () {
+  flicking.next(500);
+});
+});
+
+/* var mainflicking;
+	function flickControl(o){
+		// mainflick
+		 mainflicking = new Flicking(o, {
+			//renderOnlyVisible: true,
+			circular: true, // 무한 루프 - 컨텐츠가 충분해야 무한루프가 안끊김 (패널 크기 합계 - 패널 크기 >= 뷰포트 크기)
+			//nested: true,
+			align: "prev",
+			moveType: ["strict", { count: 1 }]
+		});	
+		document.querySelector("#btnPrevMain").addEventListener("click", function (){
+			mainflicking.prev(500);
+		});
+		document.querySelector("#btnNextMain").addEventListener("click", function (){
+			mainflicking.next(500);
+		});	
+		
+		console.log(mainflicking.panelCount)
+		
+			   // AutoPlay
+			   var autoplay = new Flicking.Plugins.AutoPlay({
+				  direction: "NEXT", 
+			     stopOnHover: true,
+			     duration: 3000
+			   });
+			   mainflicking.addPlugins(autoplay)
+			
+	}
+
+
+let minIdx = 1;
+let maxIdx = 5;
+
+const prependBtn = document.querySelector("#btn-prepend");
+const appendBtn = document.querySelector("#btn-append");
+
+prependBtn.addEventListener("click", () => {
+  flicking.prepend(`<div class="flicking-panel">${--minIdx}</div>`)
+});
+appendBtn.addEventListener("click", () => {
+  flicking.append(`<div class="flicking-panel">${++maxIdx}</div>`)
+});
+*/
+
+
+
 </script>
 
 <body>
@@ -119,24 +204,41 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <!-- 이미지 슬라이더 -->
+                <div class="info-section" style="margin-top: 15px;">
+
+                        <div id="flick" class="flicking-viewport">
+                            <div class="flicking-camera">
+                              <div class="flicking-panel"><img id="flick-img1" style="width: 100%; height: 100%;   object-fit: cover;
+                                object-position: center;
+                                display: block;"></div>
+                              <div class="flicking-panel"><img id="flick-img2" style="width: 100%; height: 100%;   object-fit: cover;
+                                object-position: center;
+                                display: block;"></div>
+                              <div class="flicking-panel"><img id="flick-img3" style="width: 100%; height: 100%;   object-fit: cover;
+                                object-position: center;
+                                display: block;"></div>
+                            </div>
+                          </div>
 
                 </div>
 
             </div>
 
 
+
         </div>
 
-        <div class="imgSlider">
-            <!-- 이미지 슬라이더 -->
-        </div>
-        </div>
-        </div>
 
 
     </section>
 
 </body>
+
+<script src="node_modules/sakura-js/dist/sakura.min.js"></script>
+<script>var sakura = new Sakura('body');
+</script>
 
 </html>
