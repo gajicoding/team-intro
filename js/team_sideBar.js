@@ -6,7 +6,7 @@ let data = [
         name: "이다인",
         age: 23,
         mbti: "ISTP",
-        hobby: "🎮 게임 | 📒일기 쓰기 | 📺 애니메이션 보기",
+        hobby: "🎮 게임 | 🏕️ 글램핑 | 📺 애니 보기",
         line: "좋은 동료가 됩시다",
         github: "dain391",
         githubUrl: "https://github.com/dain391",
@@ -16,9 +16,9 @@ let data = [
         creativity: "60%",
         confidence: "60%",
 
-        img1:"https://ifh.cc/g/ykbo83.jpg",
-        img2:"https://ifh.cc/g/MhPJJA.jpg",
-        img3:"https://ifh.cc/g/2wRCbk.jpg"
+        img1:"https://ifh.cc/g/CTsv5p.jpg",
+        img2:"https://ifh.cc/g/V1NK7a.jpg",
+        img3:"https://ifh.cc/g/CYcdcN.jpg"
     },
 
     {
