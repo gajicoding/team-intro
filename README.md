@@ -1,6 +1,6 @@
 # 팀 소개 웹페이지
 
-### 팀원
+## 팀원
 - 이다인 https://github.com/dain391
 - 김현수 https://github.com/kinhyunsu
 - 박민욱 https://github.com/m1lotic
@@ -8,8 +8,8 @@
 - 최태웅 https://github.com/taeung515
 - 김나경 https://github.com/gajicoding
 
----
-### 사용기술
+
+## 사용기술
 - HTML
 - JavaScript
 - JQuery
@@ -17,6 +17,10 @@
 - Firebase
 - GitHub
 
----
-### 시연 영상
+
+## Demo
+https://gajicoding.github.io/team-intro/
+
+
+## 시연 영상
 https://youtu.be/v1RDTepEESI?si=JPVxlsDrGHa3I7vg
